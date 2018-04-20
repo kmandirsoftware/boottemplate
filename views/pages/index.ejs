@@ -1,0 +1,35 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header %>
+<body>
+    <% include ../partials/navbar %>
+ 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>DANY / Grasshopper Test Tool</h1>
+            <p>This is a simple test to get the DVR List from a receiver.
+            <p>
+                <input type="text" name="text-1" id="receiverid" value="" placeholder="Receiver ID">
+                <input type="submit" id="recBtn" name="send" value="Submit" class="btn btn-primary btn-lg" role="button">
+            </p>
+        </div>
+    </div>
+ 
+    <div class="container-fluid" id="staticmessage">
+        <% include ../partials/content %>
+        <hr>
+ 
+        <% include ../partials/footer %>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

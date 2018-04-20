@@ -1,0 +1,19 @@
+ body    { padding-top:50px; }
+
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 4px;
+ }
+
+ /* Create four equal columns that sits next to each other */
+ .column {
+     flex: 20%;
+     max-width: 20%;
+     padding: 0 4px;
+ }
+
+ img {
+     margin-top: 8px;
+     vertical-align: middle;
+ }

@@ -1,0 +1,18 @@
+<!-- Example row of columns -->
+<div class="row">
+   <div class="col-lg-2 col-md-2">
+      <% var cols = 5; var i=0;  
+         data.forEach(function(info) { 
+            if (i % cols === 0 && i > 0) { %>
+               <div class="col-lg-2 col-md-2">
+            %><%
+            }; 
+            i++;
+            %>
+            <img class="img-thumbnail img-responsive" src=<%= info.url%> >
+            <% if (i % cols === 0 && i > 0) { %>
+               </div>
+            <% }; %>
+         <% }); %>
+   </div>
+</div>
